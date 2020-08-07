@@ -13,6 +13,7 @@ SERVICE_CONFIG = {"config": None}
 zk = KazooClient(hosts='127.0.0.1:2181')
 zk.start()
 
+
 # A method that will be trigerred when there is a change on the node where watch
 # is configured.
 def watcher_method(event):
@@ -20,6 +21,7 @@ def watcher_method(event):
     SERVICE_CONFIG["config"] = json.loads(data.decode("utf-8"))
     print("Data has been updated")
     print("Version: %s, data: %s" % (stat.version, SERVICE_CONFIG))
+
 
 # check connection state
 if zk.state == KazooState.CONNECTED:
