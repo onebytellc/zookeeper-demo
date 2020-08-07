@@ -55,10 +55,10 @@ python3 distributed-system-service.py
 ```
 It will perform following tasks:
 
-    * It will check whether the data node is created or not, after a defined interval of 5 seconds.
-    * Once data node is created it will populate SERVICE_CONFIG dict with the data on the node.
-    * It will add watch method on the data node to update the SERVICE_CONFIG if any changed is occurred on the data node.
-    * It will continue to print the SERVICE_CONFIG on terminal.
+* It will check whether the data node is created or not, after a defined interval of 5 seconds.
+* Once data node is created it will populate SERVICE_CONFIG dict with the data on the node.
+* It will add watch method on the data node to update the SERVICE_CONFIG if any changed is occurred on the data node.
+* It will continue to print the SERVICE_CONFIG on terminal.
 
 6. Create a data node and populate it with data:
 ```bash
