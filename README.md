@@ -37,7 +37,7 @@ This repository hold manifests for Zookeeper demo.
     sudo ./bin/zkServer.sh start
     ```
 
-    * To stop the service use the command given below:
+    * To stop the service, use the command given below:
     ```bash
     sudo ./bin/zkServer.sh stop
     ```
@@ -57,22 +57,22 @@ It will perform following tasks:
 
 * It will check whether the data node is created or not, after a defined interval of 5 seconds.
 * Once data node is created it will populate SERVICE_CONFIG dict with the data on the node.
-* It will add watch method on the data node to update the SERVICE_CONFIG if any changed is occurred on the data node.
-* It will continue to print the SERVICE_CONFIG on terminal.
+* It will add watch method on the data node to update the SERVICE_CONFIG if any change occurs on the data node.
+* It will continue to print the SERVICE_CONFIG on the terminal at a interval of 10 seconds.
 
 6. Create a data node and populate it with data:
 ```bash
 python3 add-configuration.py
 ```
 
-7. When the data node is created and populated with data the change can be seen in the service logs on terminal that was started in previous step.
+7. When the data node is created and populated with data the change can be seen in the service logs on the terminal that was started in the previous step.
 
 8. Update the data on the node:
 
 ```bash
 python3 update_configuration.py
 ```
-If data node is updated successfully it can be seen in the service logs that the config is also updated.
+If the data node is updated successfully it can be seen in the service logs that the config is also updated.
 
 9. Delete the data node:
 ```bash
